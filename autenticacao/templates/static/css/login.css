@@ -1,0 +1,85 @@
+/* Reset básico para evitar inconsistências entre navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Configurações gerais para o body */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+/* Container do formulário de login */
+.container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: #333;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+/* Estilização para os campos de input */
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: 0.2s ease;
+}
+
+/* Efeito nos inputs ao passar o mouse */
+input[type="text"]:hover,
+input[type="password"]:hover {
+    border-color: #6a11cb;
+}
+
+/* Botão de submit */
+.btn {
+    background-color: #6a11cb;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    width: 100%;
+}
+
+/* Efeito hover no botão */
+.btn:hover {
+    background-color: #2575fc;
+}
+
+/* Estilização de mensagens */
+.messages {
+    color: #e74c3c;
+    margin-bottom: 15px;
+    font-size: 14px;
+    text-align: center;
+}
+
+/* Responsividade */
+@media (max-width: 480px) {
+    .container {
+        padding: 15px;
+    }
+
+    input[type="text"],
+    input[type="password"],
+    .btn {
+        font-size: 14px;
+    }
+}

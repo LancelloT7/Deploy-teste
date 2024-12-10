@@ -1,0 +1,14 @@
+{% if messages %}
+    {% for message in messages %}
+        {{message}}
+    {% endfor %}
+{% endif %}
+
+<form method="POST" action="{% url 'cadastrar'%}">{% csrf_token %}
+    <input type="text" placeholder="Login" name="login">
+    <input type="password" placeholder="Senha" name="senha">
+    <h1>
+    <input type="password" placeholder="Confirmar Senha" name="confirmar_senha">   
+    <h1>
+    <input type="submit" value="CADASTRAR">    
+</form>
